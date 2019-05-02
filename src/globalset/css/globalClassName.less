@@ -1,0 +1,76 @@
+//用来定义一些公共样式类名
+@import "constant.less";
+@import "./theme.less";
+//页面整体样式
+.page_style_1 {
+  padding: 0;
+  background-color: @page_background_1;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 80px;
+  padding-top: 168px;
+}
+.page_style_2 {
+  padding: 0;
+  background-color: @page_background_1;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+.page_style_3 {
+  padding: 0;
+  background-color: @page_background_1;
+  height: 100%;
+  overflow: auto;
+}
+.vertical_center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//card
+.page_card{
+  max-width: 472px;
+  margin: 0 auto;
+  width: 100%;
+  //border: 1px solid rgba(217,217,217,1);
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15);
+}
+.page_card_Normal{
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15);
+}
+//第三方授权登录图标
+.authTheme{
+  font-family: iconfont ;
+  font-style: normal;
+}
+//文本样式鼠标滑动
+.link_mouse {
+  color: @color-link-normal;
+}
+
+.link_mouse:hover{
+  color: @color-link-hover;
+}
+.link_mouse:active{
+  color: @color-link-active;
+}
+
+.page_min_width {
+  min-width: @child_page_min_width;
+}
+
+@media only screen and (max-width: 600px) {
+  .page_style_1 {
+    padding-top: 0;
+  }
+  .page_style_2 {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,83 @@
+.angleWrapper{
+  width:80%;
+  min-height: 158px;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 2px 8px 0px rgba(0,0,0,0.15);
+  position: relative;
+  // margin: 20px auto;
+  margin-top: 20px;
+  border: 1px solid rgba(24,144,255,1);
+  position: relative;
+  left: 55px;
+  bottom: 70px;
+  .find{
+    input{
+      border: none;
+    }
+  }
+}
+
+.angleWrapper:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 20px solid  transparent;
+  border-right-color: #cccccc;
+  position: absolute;
+  right: 100%;
+  top: 45px;
+  margin-top: -20px;
+}
+
+.angleWrapper:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 18px solid  transparent;
+  border-right-color: #FFFFFF;
+  position: absolute;
+  right: 100%;
+  top: 45px;
+  margin-top: -18px;
+}
+
+.circle {
+  width:40px;
+  height:40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 40px;
+  background:rgba(255,255,255,1);
+  border:2px solid rgba(24,144,255,1);
+  color: rgba(24,144,255,1);
+  cursor: pointer;
+  // position: absolute;
+  // top: 17%;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  margin-top: 110px; 
+  margin-bottom: 50px;
+}
+
+.line {
+  width: 100%;
+  // background: rgba(24,144,255,1);
+  position: relative;
+  border-left: 2px solid rgba(24,144,255,1);
+  margin-top: -20px;
+  left: 19px;
+  // height: 50px;
+}
+
+.itemMargin {
+  margin-left: 10px;
+}
+
+.hoverIcon {
+  :hover {
+    color: rgba(24,144,255,1);
+  }
+}
